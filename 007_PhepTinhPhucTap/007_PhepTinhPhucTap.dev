@@ -1,19 +1,19 @@
 [Project]
-FileName=HelloWorld.dev
-Name=HelloWorld
+FileName=007_PhepTinhPhucTap.dev
+Name=007_PhepTinhPhucTap
 Type=1
 Ver=2
 ObjFiles=
 Includes=
 Libs=
-PrivateResource=HelloWorld_private.rc
+PrivateResource=
 ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
 Linker=
 IsCpp=0
-Icon=HelloWorld.ico
+Icon=
 ExeOutput=
 ObjectOutput=
 LogOutput=
@@ -29,7 +29,6 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=1
 
 [VersionInfo]
 Major=1
@@ -49,14 +48,4 @@ ProductName=
 ProductVersion=
 AutoIncBuildNr=0
 SyncProduct=1
-
-[Unit1]
-FileName=main.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
 
