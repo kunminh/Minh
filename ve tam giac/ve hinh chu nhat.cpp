@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include<conio.h>
- main() {
+int main() {
    int a, b, i, j ;	
    printf("nhap do dai hai canh cua hinh chu nhat");
    scanf("%d%d",&a,&b); 
