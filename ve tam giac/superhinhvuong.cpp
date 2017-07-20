@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main(){
-	int a,b,c,d,e,i,j;//,k,l,m,n; 
+	int a,b,c,d,e,f,i,j;//,k,l,m,n; 
 	printf("Chon hinh ma ban muon ve\n");
 	printf("1> hinh vuong dac\n");
 	printf("2> hinh vuong rong\n");
 	printf("3> hinh vuong cheo\n");
 	printf("4> hinh vuong cong\n");
-	//printf("5> hinh vuong thoi\n");
+	printf("5> hinh vuong thoi\n");
 	scanf("%d",&a);
 	switch(a){
 		case 1: printf("Nhap do dai canh hinh vuong: ");
@@ -20,7 +20,7 @@ int main(){
 			    break;
 		case 2: printf("nhap do dai canh cua hinh vuong   ");
 			 	scanf("%d",&c);
-			 	if(c%2 == 0 || c < 5) {
+			 	if( c < 3) {
 				printf("Khong the in hinh.");
 				}
 				else{ 
@@ -61,10 +61,10 @@ int main(){
 					}
 					else
 					{
-					for(int col = 1; col <= e; col++)
+					for(int i = 1; i <= e; i++)
 					{
-					for (int row = 1; row <= e ; row++)
-					if(col == 1 || col == e || row == 1 || row == e || col == (e+1)/2 || row == (e+1)/2) {
+					for (int j = 1; j <= e ; j++)
+					if(i == 1 || i == e || j == 1 || j == e || i == (e+1)/2 || j == (e+1)/2) {
 					printf(" * ");
 					}
 					else {
@@ -73,5 +73,26 @@ int main(){
 					}
 					}
 				break;				 		   	    
-		}
-}
+		case 5:	printf("nhap do dai canh hinh vuong");
+			 	scanf("%d",&f);
+			 	for(i=1;i<=(f+1)/2;i++)
+ 			 	{
+ 				for(j=1;j<=f;j++)
+ 				if(i+j==(f+1)/2+1||j-i==(f+1)/2-1||j==1||j==f||i==1)
+ 				printf(" * ");
+ 				else
+ 				printf("   ");
+				 printf("\n\n");
+ 				 }
+ 				 for(i=0;i<(f+1)/2;i++)
+ 				 {
+ 				for(j=0;j<f;j++){
+ 				if(j==0||i==(f+1)/2-1||(i+j)==f-1||j==f-1||i==j)
+ 				printf(" * ");
+ 				else
+ 				printf("   ");}
+ 				printf("\n\n");
+ 	}
+ }
+ }
+
