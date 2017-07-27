@@ -2,7 +2,8 @@
 int main(){
 	while(1){
 	int a,b,c,d,e,f,i,j;//,k,l,m,n; 
-	printf("Chon hinh ma ban muon ve,go 0 de thoat\n");
+	printf("Chon hinh ma ban muon ve\n");
+	printf("0> thoat\n");
 	printf("1> hinh vuong dac\n");
 	printf("2> hinh vuong rong\n");
 	printf("3> hinh vuong cheo\n");
