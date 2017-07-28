@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int source[50],i,a,x,y,z,min;
+	int source[50],i,a,x,y,z,t;
 	printf("Nhap so phan tu cua chuoi:");
 	scanf("%d",&a);
 	for (i=0;i<a;i++)
@@ -18,30 +18,55 @@ int main()
 		{
 			if(y>z)
 			{
-		  	    min=z;
+		  	    
 			}
 			else 
 			{
-				min=y;
+				if(x>z)
+				{
+					t=z;
+					z=y;
+					y=t;
+				}
+				else
+				{
+					t=y;
+					y=x;
+					x=z;
+					z=t;
+				}
 			}
 		}
 		else
 		{
 			if (x>z)
 			{
-				min=z;
+			   t=y;
+			   y=x;
+			   x=t;	
 			}
 			else
 			{
-				min=x;
+				if(y>z)
+				{
+				 	t=x;
+					x=y;
+					y=z;
+					z=t; 	
+				}
+				else
+				{
+					t=x;
+					x=z;
+					z=t;
+				}
 			}
 		}
-		if(min>source[i])
+		if(x>source[i])
 		{
-			/*doan nay minh khong biet viet code nhu the nao
-			neu viet min=source[i] thi no khong thay duoc gia tri cua source[i] vao 3 bien x,y,z*/ 
+  		    x=source[i];
 		}
 		
 	}
-	printf("%d%d%d",&x,&y,&z);
+	printf("%d\n%d\n%d\n",x,y,z);
 }
