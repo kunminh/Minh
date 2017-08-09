@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1502253251 source:c:\tin sp\baitap\main.c
+	<stdio.h>
+	<stdlib.h>
+
