@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1507997029 source:c:\codefun\github\minh\quanlysinhvien\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"student.h"
+	"Stack.h"
+
+1507291167 c:\codefun\github\minh\quanlysinhvien\student.h
+	<stdbool.h>
+
+1507300132 source:c:\codefun\github\minh\quanlysinhvien\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"Stack.h"
+
+1507299746 c:\codefun\github\minh\quanlysinhvien\stack.h
+	<stdbool.h>
+	"Student.h"
+
+1507299685 source:c:\codefun\github\minh\quanlysinhvien\student.c
+	"student.h"
+	<stdlib.h>
+	<stdio.h>
+
